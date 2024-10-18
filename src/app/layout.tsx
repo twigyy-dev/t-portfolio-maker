@@ -7,7 +7,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang='en' suppressHydrationWarning={true}>
 			<body
-				className={`${inter.className} flex min-h-screen flex-col dark:bg-[#151F34]`}
+				className={`${inter.className} flex min-h-screen flex-col bg-[#030516]`}
 			>
 				{children}
 			</body>

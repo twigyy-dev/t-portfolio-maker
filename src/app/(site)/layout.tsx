@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Providers } from "./providers";
 import NextTopLoader from "nextjs-toploader";
 import Loader from "@/components/Common/PreLoader";
+import Navbar from "@/components/Header/Navbar";
 
 export default function RootLayout({
   children,
@@ -23,7 +24,7 @@ export default function RootLayout({
           showSpinner={false}
           shadow="none"
         />
-        <Header />
+        <Navbar />
         {children}
         <Footer />
       </Providers>
