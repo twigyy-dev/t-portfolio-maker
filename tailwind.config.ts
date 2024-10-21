@@ -29,35 +29,6 @@ const config: Config = {
 			...defaultTheme.screens,
 		},
 		extend: {
-			// colors: {
-			// 	current: "currentColor",
-			// 	transparent: "transparent",
-			// 	white: "#FFFFFF",
-			// 	black: "#0E172B",
-			// 	body: "#64748B",
-			// 	stroke: "#E8E8E8",
-			// 	primary: {
-			// 		DEFAULT: "#573CFF",
-			// 		dark: "#3E22E9",
-			// 	},
-			// 	dark: {
-			// 		DEFAULT: "#1C274C",
-			// 		2: "#495270",
-			// 		3: "#606882",
-			// 		4: "#8D93A5",
-			// 		5: "#BBBEC9",
-			// 	},
-			// 	gray: {
-			// 		DEFAULT: "#F3F5F6",
-			// 		1: "#F9FAFB",
-			// 		2: "#F3F4F6",
-			// 		3: "#E5E7EB",
-			// 		4: "#D1D5DB",
-			// 		5: "#9CA3AF",
-			// 		6: "#6B7280",
-			// 		7: "#374151",
-			// 	},
-			// },
 
 			colors: {
 				current: "currentColor",
@@ -70,8 +41,8 @@ const config: Config = {
 					dark: "#394152",
 				},
 				primary: {
-					DEFAULT: "#635BFF",
-					dark: "#3E22E9",
+					DEFAULT: "#09D1D5",
+					dark: "#09D1D5",
 				},
 				dark: {
 					DEFAULT: "#1C274C",
