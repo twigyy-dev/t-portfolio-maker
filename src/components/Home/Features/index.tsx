@@ -8,9 +8,8 @@ const Features = () => {
 	return (
 		<div className="container">
 			<img src="https://placehold.co/100x100.png"  alt=""/>
-			<h1 className="container-text">Website</h1>
-			<h1 className="container-text">Development</h1>
-
+			<h1 className="container-text">Website <br/> Development</h1>
+			
 		</div>
 		// <section
 		// 	id='features'
