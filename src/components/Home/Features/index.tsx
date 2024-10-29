@@ -6,11 +6,32 @@ import Image from "next/image";
 import "../../../app/sass/features.scss"
 const Features = () => {
 	return (
+		<>
+		
 		<div className="container">
-			<img src="https://placehold.co/100x100.png"  alt=""/>
+			<img src="https://placehold.co/50X50.png"  alt=""/>
 			<h1 className="container-text">Website <br/> Development</h1>
 			
 		</div>
+		<div className="flex flex-row gap-20">
+
+		<div className="container">
+			<img src="https://placehold.co/50X50.png"  alt=""/>
+			<h1 className="container-text">Domain & <br/> Hosting</h1>
+			
+		</div>
+		<div className="container">
+			<img src="https://placehold.co/50X50.png"  alt=""/>
+			<h1 className="container-text">Website <br/> Design</h1>
+			
+		</div>
+		</div>
+		<div className="container">
+			<img src="https://placehold.co/50X50.png"  alt=""/>
+			<h1 className="container-text">Website <br/> Maintenance</h1>
+			
+		</div>
+		</>
 		// <section
 		// 	id='features'
 		// 	className='relative z-1 overflow-hidden bg-gray-1 py-17.5 dark:bg-black dark:text-white lg:py-22.5 xl:py-27.5'
