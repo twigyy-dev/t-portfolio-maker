@@ -11,17 +11,22 @@
 }
 
 .services-container{
-    background-color: #0D3346;
+    background-color: rgba(255, 253, 253, 0.101);
     width: 308px;
     height: 308px;
     border-radius: 20px;
-    border-color: #156380;
+    border-color: rgba(255, 255, 255, 0.202);
     border-width: 5px;
     //align-items: center;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &:hover{
+        background-color: #0D3346;
+        border-color: #156380 ;
+    }
     
     &-text{
         font-size: 36px;
