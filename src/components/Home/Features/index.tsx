@@ -7,29 +7,30 @@ import "../../../app/sass/features.scss"
 const Features = () => {
 	return (
 		<>
-		
-		<div className="container">
-			<img src="https://placehold.co/50X50.png"  alt=""/>
-			<h1 className="container-text">Website <br/> Development</h1>
+		<div className="services-main-container">
+		<div className="container services-container">
+			<img src="https://placehold.co/150X150.png"  alt=""/>
+			<h1 className="services-container-text">Website <br/> Development</h1>
 			
 		</div>
 		<div className="flex flex-row gap-20">
 
-		<div className="container">
-			<img src="https://placehold.co/50X50.png"  alt=""/>
-			<h1 className="container-text">Domain & <br/> Hosting</h1>
+		<div className="container services-container">
+			<img src="https://placehold.co/150X150.png"  alt=""/>
+			<h1 className="services-container-text">Domain & <br/> Hosting</h1>
 			
 		</div>
-		<div className="container">
-			<img src="https://placehold.co/50X50.png"  alt=""/>
-			<h1 className="container-text">Website <br/> Design</h1>
+		<div className="container services-container">
+			<img src="https://placehold.co/150X150.png"  alt=""/>
+			<h1 className="services-container-text">Website <br/> Design</h1>
 			
 		</div>
 		</div>
-		<div className="container">
-			<img src="https://placehold.co/50X50.png"  alt=""/>
-			<h1 className="container-text">Website <br/> Maintenance</h1>
+		<div className="container services-container">
+			<img src="https://placehold.co/150X150.png"  alt=""/>
+			<h1 className="services-container-text">Website <br/> Maintenance</h1>
 			
+		</div>
 		</div>
 		</>
 		// <section
