@@ -2,12 +2,13 @@ import ContactForm from "@/components/Contact/ContactForm";
 import "@/app/sass/contactForm.scss"
 
 import React from "react";
+import Section from "@/components/Common/Section";
 
 type Props = {};
 
 const ContactPage = (props: Props) => {
   return (
-    <div className="container">
+    <Section>
       <div className="my-15">
         <div className="border-rounded-white w-max mx-auto p-1">
         <input type="checkbox" id="toggle" className="toggleCheckbox" />
@@ -19,7 +20,7 @@ const ContactPage = (props: Props) => {
       </div>
        
       <ContactForm />
-    </div>
+    </Section>
   );
 };
 

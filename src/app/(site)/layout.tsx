@@ -1,6 +1,7 @@
 import "../../styles/globals.css";
 import "../../styles/satoshi.css";
 import "../../styles/globals.css";
+import "../sass/main.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Providers } from "./providers";

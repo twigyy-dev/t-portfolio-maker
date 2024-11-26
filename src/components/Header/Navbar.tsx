@@ -1,19 +1,31 @@
-import React from 'react'
-import "../../app/sass/navstyle.scss"
+import React from "react";
+import "../../app/sass/navstyle.scss";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className='nav'>
-
-    <ul className='nav-child border-rounded-white'>
-        <li><h1 className='nav-h1'>Home</h1></li> 
-        <li><h1 className='nav-h1'>Services</h1> </li>
-        <li><h1 className='nav-h1'>Pricing</h1></li> 
-        <li><h1 className='nav-h1'>FAQs</h1> </li>
-        <li><h1 className='nav-h1'>Contact Us</h1> </li>
-    </ul>
+    <div className="nav">
+      <ul className="nav-child border-rounded-white">
+        <li>
+          <Link href="/" className="nav-h1">Home</Link>
+        </li>
+        <li>
+          <Link href="/contact-us" className="nav-h1">Services</Link>{" "}
+        </li>
+        <li>
+          <Link href="/contact-us" className="nav-h1">Pricing</Link>
+        </li>
+        <li>
+          <Link href="/contact-us" className="nav-h1">FAQs</Link>{" "}
+        </li>
+        <li>
+          <Link href="/contact-us" className="nav-h1">
+            Contact Us
+          </Link>{" "}
+        </li>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -1,7 +1,6 @@
 import Blog from "@/components/Blog";
 // import Home from "@/components/Home";
 import { Metadata } from "next";
-import "../../sass/test.scss"
 
 export const metadata: Metadata = {
 	title: `Full-Stack SaaS Boilerplate for Next.js - SaaSBold Demo`,
@@ -26,10 +25,6 @@ export default function BlogPage() {
 	return (
 		<main>
 			<Blog />
-			<div className="test">
-				<h1 className="test-h1">Test</h1>
-				<h1 className="test-h1 active">Test</h1>
-			</div>
 		</main>
 	);
 }
