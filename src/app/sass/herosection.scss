@@ -1,11 +1,11 @@
 .main_image{
-    background-image: url("/images/hero/mainbackgroundimage.png"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url("/images/hero/mainbackgroundimage-modified.png"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-size: cover;
     width: 100%;
     height: 100vh;
     //opacity: 0.4;
     background-blend-mode: multiply;
-    
+    // filter: invert(100%);
 }
 .main_text{
     display: flex;
@@ -22,17 +22,18 @@
 
 .explore_btn{
     background: linear-gradient(to right, #13FCFF 0%, #056D6F 100%);
-    height: 50px;
-    width: 160px;
+    height: -2px;
+    width: 250px;
     color: black;
     font-weight: bold;
     border-radius: 50px;
-    padding: 12px;
+    padding: 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 40px;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    
-    
-
+    font-weight: 600;
+}
+.explore_btn:hover{
+    background-color: #056D6F;
+    text-align: left;
 }

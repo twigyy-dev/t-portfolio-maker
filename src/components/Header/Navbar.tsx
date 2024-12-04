@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="nav">
+    <section className="nav">
       <ul className="nav-child border-rounded-white">
         <li>
           <Link href="/" className="nav-h1">Home</Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
           </Link>{" "}
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 

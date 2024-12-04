@@ -29,8 +29,6 @@ const Hero = () => {
         <div className="w-full flex justify-center mt-30">
           <button className="explore_btn">Explore</button>
         </div>
-
-       
       </div>
     </section>
     // <section className='relative z-1 overflow-hidden pb-17.5 pt-30 lg:pb-20 lg:pt-30 xl:pb-25 xl:pt-[170px]'>

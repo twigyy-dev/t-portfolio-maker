@@ -1,3 +1,6 @@
+$color-primary : #09D1D5;
+$color-secondary : #030516;
+
 .nav{
    display:flex;
    justify-content: center;
@@ -5,19 +8,27 @@
    position: absolute;
    top: 0;
    transform: translate(-50%);
-   left: 50%;
+   left: 70%;
    z-index: 1000;
     &-child{
         display: flex;
         padding: 10px 20px;
         gap: 30px;
         width: max-content;
-        justify-content: center;   
+        justify-content: center;
+         
     }
     &-h1{
         color: white;
-        font-size: 15px;
-        
-
+        font-size: 25px;
+        // border: 2px solid white;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 15px;
+    }
+    .nav-h1:hover{
+        color: $color-secondary;
+        background-color :  $color-primary;
+        transition: 200ms;
     }
 }
