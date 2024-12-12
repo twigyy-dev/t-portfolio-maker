@@ -4,35 +4,103 @@ import FeatureItem from "./FeatureItem";
 import SectionHeader from "@/components/Common/SectionHeader";
 import Image from "next/image";
 import "../../../app/sass/features.scss"
-const Features = () => {
-	return (
-		<>
-		<div className="services-main-container">
-		<div className="container services-container">
-			<img src="https://placehold.co/150X150.png"  alt=""/>
-			<h1 className="services-container-text">Website <br/> Development</h1>
-			
-		</div>
-		<div className="flex flex-row gap-20">
+import Section from "@/components/Common/Section";
+import colors, { black } from "tailwindcss/colors";
 
-		<div className="container services-container">
-			<img src="https://placehold.co/150X150.png"  alt=""/>
-			<h1 className="services-container-text">Domain & <br/> Hosting</h1>
-			
+const services = [
+	{ name: 'Website Development', icon: '🌐', description: 'Building responsive and modern websites.' },
+	{ name: 'UI/UX Design', icon: '🎨', description: 'Designing user-friendly interfaces.' },
+	{ name: 'iOS Development', icon: '📱', description: 'Developing iOS applications.' },
+	{ name: 'WordPress/Wix Development', icon: '🛠️', description: 'Customizing WordPress & Wix solutions.' },
+	{ name: 'Android Development', icon: '🤖', description: 'Creating robust Android applications.' },
+	{ name: 'Domain and Hosting', icon: '🔗', description: 'Providing reliable hosting services.' },
+	{ name: 'SEO/Digital Marketing', icon: '📈', description: 'Optimizing and marketing for the web.' },
+  ];
+
+
+  const OurServices = () => {
+	return (
+	<Section>
+	  <section className="our-services">
+		<span className="Services" style={{ color: 'white' }}>Our&nbsp;<span style={{ color: '#09D1D5' }}> Services</span></span>
+		<div className="services-container">
+		  {services.map((service, index) => (
+			<div className={`service-card service-card-${index}`} key={index}>
+			  <div className="icon">{service.icon}</div>
+			  <h3>{service.name}</h3>
+			  {/* <p>{service.description}</p> */}
+			</div>
+		  ))}
 		</div>
-		<div className="container services-container">
-			<img src="https://placehold.co/150X150.png"  alt=""/>
-			<h1 className="services-container-text">Website <br/> Design</h1>
-			
-		</div>
-		</div>
-		<div className="container services-container">
-			<img src="https://placehold.co/150X150.png"  alt=""/>
-			<h1 className="services-container-text">Website <br/> Maintenance</h1>
-			
-		</div>
-		</div>
-		</>
+	  </section>
+	</Section>
+	);
+  }
+
+
+
+
+
+// const Features = () => {
+
+// 	return (
+// 		<section className="services-main-container">
+// 			<span className="Services" style={{ color: 'white' }}>Our&nbsp;<span style={{ color: '#09D1D5' }}> Services</span></span>
+// 			<div className="service-grid">
+// 				<div className="container services-container">
+// 					<img src="/website-development.png" alt="Website Development" />
+// 					<h3>Website Development</h3>
+// 				</div>
+// 				<div className="container services-container-card">
+// 					<img src="/ui-ux-design.png" alt="UI/UX Design" />
+// 					<h3>UI/UX Design</h3>
+// 				</div>
+// 				<div className="container services-container-card">
+// 					<img src="/ios-development.png" alt="iOS Development" />
+// 					<h3>iOS Development</h3>
+// 				</div>
+// 				<div className="container services-container-card">
+// 					<img src="/wordpress-development.png" alt="WordPress/Wix Development" />
+// 					<h3>WordPress/Wix Development</h3>
+// 				</div>
+// 				<div className="container services-container-card">
+// 					<img src="/android-development.png" alt="Android Development" />
+// 					<h3>Android Development</h3>
+// 				</div>
+// 				<div className="container services-container-card">
+// 					<img src="/seo-digital-marketing.png" alt="SEO/Digital Marketing" />
+// 					<h3>SEO/Digital Marketing</h3>
+// 				</div>
+// 				<div className="service-container services-container">
+// 					<img src="/domain-hosting.png" alt="Domain and Hosting" />
+// 					<h3>Domain and Hosting</h3>
+// 				</div>
+// 			</div>
+
+
+			{/* <div className="container services-container">
+				<img src="https://placehold.co/150X150.png" alt="" />
+				<h1 className="services-container-text">Website <br /> Development</h1>
+			</div>
+			<div className="flex flex-row gap-20">
+
+				<div className="container services-container">
+					<img src="https://placehold.co/150X150.png" alt="" />
+					<h1 className="services-container-text">Domain & <br /> Hosting</h1>
+
+				</div>
+				<div className="container services-container">
+					<img src="https://placehold.co/150X150.png" alt="" />
+					<h1 className="services-container-text">Website <br /> Design</h1>
+
+				</div>
+			</div>
+			<div className="container services-container">
+				<img src="https://placehold.co/150X150.png" alt="" />
+				<h1 className="services-container-text">Website <br /> Maintenance</h1>
+
+			</div> */}
+		// </section>
 		// <section
 		// 	id='features'
 		// 	className='relative z-1 overflow-hidden bg-gray-1 py-17.5 dark:bg-black dark:text-white lg:py-22.5 xl:py-27.5'
@@ -72,7 +140,7 @@ const Features = () => {
 		// 		</div>
 		// 	</div>
 		// </section>
-	);
-};
+// 	);
+// };
 
-export default Features;
+export default OurServices;

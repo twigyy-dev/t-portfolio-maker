@@ -25,36 +25,47 @@ $button-primary : #09D1D5;
 
 .explore_btn {
     border: none;
+    display:inline-flex ;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(to right, #13FCFF 0%, #056D6F 100%);
+    transition: all 0.3s ease-in-out;
     height: -2px;
     width: 250px;
     color: black;
     font-weight: bold;
     border-radius: 50px;
-    padding: 20px;
-    text-align: center;
+    padding: 20px;;
     font-size: 40px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
 
 .explore_btn:hover {
-    box-shadow: inset 10px 10px #087071;
+    font-size: 35px;
+    box-shadow: inset 9px 9px 10px #056D6F;
     transition: all 0.3s ease-in-out;
-    // text-align: left;
+}
+
+.explore_btn:hover::before {
+    font-size: 0;
+    transition: all 0.4s ease-in-out;
 }
 
 .explore_btn:hover::after {
-    content: "↗";
+    content: "→";
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 20px;
-    margin-top: 20px;
     font-weight: 900;
-    font-size: 55px;
+    font-size: 50px;
     transition: all 0.4s ease-in-out;
     opacity: 1;
 }
 .explore_btn::after {
-    content: ""; 
+    content: "→"; 
+    font-size: 0;
     opacity: 0;
     transition: all 0.4s ease-in-out; 
   }
