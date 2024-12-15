@@ -1,0 +1,68 @@
+// Define standard breakpoints for responsive design
+$breakpoints: (
+  'mobile': 480px,
+  'handhelds': 768px,
+  'smalllaptop': 1024px,
+  'laptop': 1280px,
+  'desktop': 1440px
+);
+
+// Mixin for media queries
+@mixin responsive($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+    @media (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @error "Unknown breakpoint: #{$breakpoint}. Available breakpoints: #{map-keys($breakpoints)}.";
+  }
+}
+
+// Example usage:
+// .example-class {
+//   font-size: 16px;
+//   @include responsive('handhelds') {
+//     font-size: 14px;
+//   }
+// }
+
+// Utility mixin for landscape orientation
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+// Utility mixin for retina displays
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+// Utility for specific ranges (min-width and max-width)
+@mixin between($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+// Example usage of utility mixins:
+// .example-landscape {
+//   @include landscape {
+//     background-color: blue;
+//   }
+// }
+
+// .example-retina {
+//   @include retina {
+//     background-image: url('high-res-image.png');
+//   }
+// }
+
+// .example-range {
+//   @include between(600px, 900px) {
+//     font-size: 18px;
+//   }
+// }

@@ -3,14 +3,14 @@ import featureItemData from "./featuresData";
 import FeatureItem from "./FeatureItem";
 import SectionHeader from "@/components/Common/SectionHeader";
 import "../../../app/sass/clients.scss"
+import Section from "@/components/Common/Section";
 
 const FeaturesWithImage = () => {
 	return (
 		<>
-		<div className="area">
-			<h1 className="area-first_text">Our</h1>
-			<h1 className="area-second_text">Clients</h1>
-		</div>
+		<Section>
+			<p className="h2">Hello</p>
+		</Section>
 		</>
 	);
 };
