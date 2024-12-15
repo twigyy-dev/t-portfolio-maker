@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section>
       <div className=" main_image ">
-        <div className="main_text">
+        <div className="main_text text-center">
           <h1 className="text-[108px] text-[#B7B7B7] font-extrabold ">
             You{" "}
             <span className="text-[108px] text-[#09D1D5] font-extrabold">
@@ -18,8 +18,7 @@ const Hero = () => {
             <span className="text-[108px] text-[#B7B7B7] font-extrabold">
               big{""}
             </span>
-          </h1>
-          <h1 className="text-[108px] text-[#B7B7B7] font-extrabold ">
+            <br/>
             We make it {""}
             <span className="text-[108px] text-[#09D1D5] font-extrabold">
               possible{" "}

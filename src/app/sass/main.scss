@@ -4,6 +4,22 @@
 $color-primary : #09D1D5;
 $color-secondary : #030516;
 
+.container{
+    padding: 0 40px;
+}
+
+@include responsive(mobile){
+    .show-mobile{
+        display: block;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+}
+
+
+
 // .border{
 //     &-rounded{
 //         &-white{

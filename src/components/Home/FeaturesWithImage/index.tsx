@@ -9,6 +9,7 @@ const FeaturesWithImage = () => {
 	return (
 		<>
 		<Section>
+			div
 			<p className="h2">Hello</p>
 		</Section>
 		</>
