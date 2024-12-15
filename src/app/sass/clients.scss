@@ -9,5 +9,30 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     line-height: 200px;
-
 }
+
+.clients{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+
+    .client{
+        &-1 { grid-area: 2 / 1 / 4 / 2; }
+        &-2 { grid-area: 1 / 2 / 3 / 3; }
+        &-3 { grid-area: 3 / 2 / 5 / 3; }
+        &-4 { grid-area: 2 / 3 / 4 / 4; }
+    }
+
+    &-wrapper{
+        margin: auto;
+        align-items: center;
+        display: flex ;
+        justify-content: center;
+    }
+    }
+    
+    
