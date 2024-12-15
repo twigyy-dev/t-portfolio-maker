@@ -11,7 +11,7 @@
 	}
 
 	body {
-		@apply relative z-1 font-kanit text-base font-normal -tracking-[0.16px] text-body;
+		@apply relative z-1 font-kanit text-base font-normal -tracking-[0.16px] text-white;
 	}
 }
 
