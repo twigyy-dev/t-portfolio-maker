@@ -2,11 +2,9 @@ import React from "react";
 import "../../app/sass/navstyle.scss";
 import Link from "next/link";
 import Section from "../Common/Section";
-import SectionHeader from "@/components/Common/SectionHeader";
 
 const Navbar = () => {
   return (
-    <Section>
     <section className="nav">
       <ul className="nav-child border-rounded-white">
         <li>
@@ -28,7 +26,6 @@ const Navbar = () => {
         </li>
       </ul>
     </section>
-    </Section>
   );
 };
 

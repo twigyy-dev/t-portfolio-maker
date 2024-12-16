@@ -9,7 +9,6 @@ import Section from "@/components/Common/Section";
 
 const Hero = () => {
   return (
-    <Section>
       <div className=" main_image ">
         <div className="main_text">
           <section>
@@ -37,7 +36,6 @@ const Hero = () => {
           </section>
         </div>
       </div>
-    </Section>
   );
 };
 
