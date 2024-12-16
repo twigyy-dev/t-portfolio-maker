@@ -9,8 +9,7 @@ import Section from "@/components/Common/Section";
 
 const Hero = () => {
   return (
-      <div className=" main_image ">
-        <div className="main_text">
+
           <section>
             <div className=" main_image ">
               <div className="main_text text-center">
@@ -34,8 +33,7 @@ const Hero = () => {
               </div>
             </div>
           </section>
-        </div>
-      </div>
+
   );
 };
 
