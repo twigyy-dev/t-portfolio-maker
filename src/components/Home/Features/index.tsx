@@ -8,13 +8,13 @@ import Section from "@/components/Common/Section";
 import colors, { black } from "tailwindcss/colors";
 
 const services = [
-	{ name: 'Website Development', icon: '🌐', description: 'Building responsive and modern websites.' },
-	{ name: 'UI/UX Design', icon: '🎨', description: 'Designing user-friendly interfaces.' },
-	{ name: 'iOS Development', icon: '📱', description: 'Developing iOS applications.' },
-	{ name: 'WordPress/Wix Development', icon: '🛠️', description: 'Customizing WordPress & Wix solutions.' },
-	{ name: 'Android Development', icon: '🤖', description: 'Creating robust Android applications.' },
-	{ name: 'Domain and Hosting', icon: '🔗', description: 'Providing reliable hosting services.' },
-	{ name: 'SEO/Digital Marketing', icon: '📈', description: 'Optimizing and marketing for the web.' },
+	{ name: 'Website Development', image: '🌐',},
+	{ name: 'UI/UX Design', image: '🎨',},
+	{ name: 'iOS Development', image: '📱',},
+	{ name: 'WordPress/Wix Development', image: '🛠️',},
+	{ name: 'Android Development', image: '🤖',},
+	{ name: 'Domain and Hosting', image: '🔗',},
+	{ name: 'SEO/Digital Marketing', image: '📈', },
   ];
 
 
@@ -26,7 +26,7 @@ const services = [
 		<div className="services-container">
 		  {services.map((service, index) => (
 			<div className={`service-card service-card-${index}`} key={index}>
-			  <div className="icon">{service.icon}</div>
+			  <div className="image">{service.image}</div>
 			  <h3>{service.name}</h3>
 			  {/* <p>{service.description}</p> */}
 			</div>

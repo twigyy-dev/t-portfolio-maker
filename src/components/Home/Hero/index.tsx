@@ -2,13 +2,15 @@ import Image from "next/image";
 import React from "react";
 import brandData from "./brandData";
 import Link from "next/link";
+import SectionHeader from "@/components/Common/SectionHeader";
 import "../../../app/sass/herosection.scss";
+import Section from "@/components/Common/Section";
 //import mainbackgroundimage from "/images/hero/mainbackgroundimage.png"
 
 const Hero = () => {
   return (
-    <section>
-      <div className=" main_image ">
+    <Section>
+    <div className=" main_image ">
         <div className="main_text">
           <h1 className="text-[108px] text-[#B7B7B7] font-extrabold ">
             You{" "}
@@ -30,7 +32,7 @@ const Hero = () => {
           <button className="explore_btn">Explore</button>
         </div>
       </div>
-    </section>
+      </Section>
     // <section className='relative z-1 overflow-hidden pb-17.5 pt-30 lg:pb-20 lg:pt-30 xl:pb-25 xl:pt-[170px]'>
     // 	<div className='mx-auto w-full max-w-[740px] px-4 text-center sm:px-8 xl:px-0'>
     // 		<h1 className='mb-5 font-satoshi text-heading-4 font-bold -tracking-[1.6px] text-black dark:text-white lg:text-heading-2 xl:text-[58px] xl:leading-[1.12]'>
