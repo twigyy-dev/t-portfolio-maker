@@ -22,7 +22,7 @@ const services = [
 	return (
 	<Section>
 	  <section className="our-services">
-		<span className="Services" style={{ color: 'white' }}>Our&nbsp;<span style={{ color: '#09D1D5' }}> Services</span></span>
+		<span className="Services h2" style={{ color: 'white' }}>Our&nbsp;<span style={{ color: '#09D1D5' }}> Services</span></span>
 		<div className="services-container">
 		  {services.map((service, index) => (
 			<div className={`service-card service-card-${index}`} key={index}>

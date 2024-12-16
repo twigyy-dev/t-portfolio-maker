@@ -1,13 +1,84 @@
-.area{
-    display: flex;
-    flex-direction: row;
+.clients {
+    display: grid;
     justify-content: center;
-    // max-height: 100vh;
-    //padding-top: 50px;
-    font-size: 200px;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    line-height: 200px;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
 
-}
+    & .client{
+        &-1 { grid-area: 2 / 1 / 4 / 2; }
+        &-2 { grid-area: 1 / 2 / 3 / 3; }
+        &-3 { grid-area: 3 / 2 / 5 / 3; }
+        &-4 { grid-area: 2 / 3 / 4 / 4; }
+    }
+
+    &-wrapper{
+        margin: auto;
+        align-items: center;
+        display: flex ;
+        justify-content: center;
+    }
+  }
+  
+//   .clients .client-1 {
+//     grid-area: 2 / 1 / 4 / 2;
+//   }
+//   .clients .client-2 {
+//     grid-area: 1 / 2 / 3 / 3;
+//   }
+//   .clients .client-3 {
+//     grid-area: 3 / 2 / 5 / 3;
+//   }
+//   .clients .client-4 {
+//     grid-area: 2 / 3 / 4 / 4;
+//   }
+  
+  .client {
+    position: relative;
+    overflow: hidden;
+    background: white;
+    border-radius: 30px;
+    border: #030516; /* Match the site background */
+  }
+  
+  .arrow-container {
+    position: absolute;
+    bottom: -65px;
+    right: -65px;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.6s ease-out;
+    z-index: 2; /* Arrow appears above the wave */
+  }
+  
+  .arrow {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: -95px;
+    right: -95px;
+    width: 100px;
+    height: 100px;
+    background: #030516; /* Match the site background */
+    border-radius: 30%;
+    clip-path: path(
+    "M0,20 Q0,0 20,0 L130,0 Q150,0 150,20 L150,130 Q150,150 130,150 L20,150 Q0,150 0,130 Z"
+  );
+    transition: transform 0.6s ease-out;
+    z-index: 1; /* Wave effect is below the arrow */
+  }
+  
+  .group:hover .arrow-container {
+    transform: translate(-50px, -50px); /* Arrow slides into place */
+  }
+  
+  .group:hover .wave {
+    transform: translate(-75px, -75px); /* Wave grows into view */
+  }
+  

@@ -13,6 +13,7 @@ const config: Config = {
 		fontFamily: {
 			satoshi: ["Satoshi", "sans-serif"],
 			inter: ["Inter", "sans-serif"],
+			kanit:["Kanit", "sans-serif"]
 		},
 		container: {
 			center: true,
@@ -75,6 +76,7 @@ const config: Config = {
 				},
 			},
 			fontSize: {
+				"base": ["20px","21px"],
 				"heading-1": ["60px", "72px"],
 				"heading-2": ["48px", "58px"],
 				"heading-3": ["40px", "48px"],
