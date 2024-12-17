@@ -68,20 +68,25 @@
         }
 
         &:hover {
-            transition: 200ms ease;
-            background-color: red;
+            transition: 0.5s ease;
+            background-color: rgb(60, 104, 104);
             transform: scaleY(1.2);
             transform-origin: top;
         }
-
+        
         .image {
             margin-bottom: 60px;
             font-size: 50px;
         }
-
+        
         h3 {
             font-size: 30px;
             color: white;
         }
+
     }
+    .service-card:hover > .image, .service-card:hover > h3 {
+        transform: scaleY(calc(1/1.2));
+    }
+
 }
