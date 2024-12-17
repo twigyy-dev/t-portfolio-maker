@@ -68,10 +68,17 @@
         }
 
         &:hover {
+            cursor: pointer;
             transition: 0.5s ease;
             background-color: rgb(60, 104, 104);
             transform: scaleY(1.2);
             transform-origin: top;
+        }
+
+        &:hover::after{
+            content: "See More";
+            transform: scaleY(calc(1/1.2));
+            transition: 0.5s ease-out;
         }
         
         .image {
