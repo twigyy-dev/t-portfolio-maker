@@ -66,24 +66,12 @@
             grid-area: 4 / 3 / 6 / 4;
         }
         
-        // .service-card{
-        // }
-        // &:not(:hover){
-        //     transform: scale(0.7);
-        //     transition: all 0.5s ease;
-        // }
         &:hover {
             cursor: pointer;
             transition:all  0.5s ease;
             // background-color: rgb(60, 104, 104);
             transform: scaleY(1.2);
-            // transform-origin: ;
         }
-        &:hover::after{
-            transform: scaleY(calc(1/1.2));
-            transition: all 0.5s ease;
-        }
-
         
         .image {
             margin-bottom: 60px;
@@ -101,10 +89,15 @@
             visibility: hidden;
             font-size: 30px;
         }   
+
+        .service-image{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
-    .service-card:hover > .image, .service-card:hover > h3, .service-card:hover > .btn-see-more > div {
+    .service-card:hover > .image, .service-card:hover > h3, .service-card:hover > .btn-see-more > div, .service-card:hover > .service-image {
         visibility: visible;
         transform: scaleY(calc(1/1.2));
     }
-
 }
