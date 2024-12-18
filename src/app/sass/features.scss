@@ -11,12 +11,10 @@
 
 
 .our-services {
-    background-image: url("/images/features/gradient-bg.png");
-    background-size: contain;
-    background-position: center;
+    background: radial-gradient(#3FB59D 60%, #6145DB 80%);
+    filter: blur(100);
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
 
     .services-container {
         display: grid;
@@ -30,13 +28,20 @@
 
     .service-card {
         border: 3px solid whitesmoke;
-        background-color: #968e8e2d;
+        background-color: #968e8e62;
         backdrop-filter: blur(100);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        
         border-radius: 15px;
         padding: 1rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
+        transform: scale(1);
+        transition: all 0.5s ease;
+        // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        // transition: transform 0.3s, box-shadow 0.3s;
 
         &-0 {
             grid-area: 1 / 1 / 4 / 2;
@@ -70,34 +75,31 @@
             cursor: pointer;
             transition:all  0.5s ease;
             // background-color: rgb(60, 104, 104);
-            transform: scaleY(1.2);
-        }
-        
-        .image {
-            margin-bottom: 60px;
-            font-size: 50px;
+            transform: scale(0.9);
+            transform-origin: center;
         }
         
         h3 {
-            font-size: 30px;
+            font-size: 40px;
             color: white;
         }
         
         .btn-see-more > div {
             display: flex;
             align-items: center;
-            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
             font-size: 30px;
         }   
-
-        .service-image{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        
     }
+    
+    .service-image{
+       display: inline-flex;
+    }
+
     .service-card:hover > .image, .service-card:hover > h3, .service-card:hover > .btn-see-more > div, .service-card:hover > .service-image {
-        visibility: visible;
-        transform: scaleY(calc(1/1.2));
+        transition: 0.3s ease-in-out;
+        opacity: 1;
     }
 }
