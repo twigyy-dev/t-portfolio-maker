@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+// import React from "react";
+import React, { useState, useEffect } from 'react';
 import featuresData from "./featuresData";
 import FeatureItem from "./FeatureItem";
 import SectionHeader from "@/components/Common/SectionHeader";
@@ -15,6 +17,7 @@ import figma from "./Services/Figma.png";
 import wordpress from "./Services/wordpress.png";
 import dh from "./Services/Domain and Hosting.png";
 
+
 const services = [
 	{ name: 'Website Development', image: web , },
 	{ name: 'UI/UX Design', image: figma, },
@@ -27,12 +30,30 @@ const services = [
 
 
 const OurServices = () => {
+	const [gradient, setGradient] = useState("radial-gradient(circle, #3fb59d88 0%, #6145db21 32%, #03051600 50%)");
+	useEffect(() => {
+		const handleMouseMove = (e:any) => {
+		  const { clientX, clientY } = e;
+		  const { innerWidth, innerHeight } = window;
+
+		  const xPercent = (clientX / innerWidth) * 100;
+		  const yPercent = (clientY / innerHeight) * 100;
+	
+		  const newGradient = `radial-gradient(circle at ${xPercent}% ${yPercent}%,#3fb59d88 0%, #6145db21 32%, #03051600 50%)`;
+		  setGradient(newGradient);
+		};
+	
+		window.addEventListener("mousemove", handleMouseMove);
+	return () => {
+		  window.removeEventListener("mousemove", handleMouseMove);
+		};
+	  }, []);
+	
 	return (
-		<Section>
-		<section className="our-services">
+		// <Section>
+		<section className="our-services" style={{ background: gradient }}>
 			<p className="h2 text-center">Our <span className="text-primary"> Services</span></p>
-			<div className="services-container">
-				<div className="blob"></div>
+			<div className="services-container" >
 				{services.map((service, index) => (
 					<div className={`service-card service-card-${index}`} key={index}>
 						<Image className="service-image" src={service.image} alt={service.name} height={150} width={150}></Image>
@@ -47,7 +68,7 @@ const OurServices = () => {
 				))}
 			</div>
 		</section>
-		</Section>
+		// </Section>
 	);
 }
 
