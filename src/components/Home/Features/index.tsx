@@ -32,6 +32,7 @@ const OurServices = () => {
 		<section className="our-services">
 			<p className="h2 text-center">Our <span className="text-primary"> Services</span></p>
 			<div className="services-container">
+				<div className="blob"></div>
 				{services.map((service, index) => (
 					<div className={`service-card service-card-${index}`} key={index}>
 						<Image className="service-image" src={service.image} alt={service.name} height={150} width={150}></Image>
