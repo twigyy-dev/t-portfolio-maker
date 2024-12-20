@@ -19,7 +19,7 @@ import dh from "./Services/Domain and Hosting.png";
 
 
 const services = [
-	{ name: 'Website Development', image: web , },
+	{ name: 'Website Development', image: web, },
 	{ name: 'UI/UX Design', image: figma, },
 	{ name: 'iOS Development', image: ios, },
 	{ name: 'WordPress/Wix Development', image: wordpress, },
@@ -31,27 +31,40 @@ const services = [
 
 const OurServices = () => {
 	const [gradient, setGradient] = useState("radial-gradient(circle, #3fb59d88 0%, #6145db21 32%, #03051600 50%)");
+	const [isHovering, setIsHovering] = useState(false);
 	useEffect(() => {
-		const handleMouseMove = (e:any) => {
-		  const { clientX, clientY } = e;
-		  const { innerWidth, innerHeight } = window;
+		const handleMouseMove = (e: any) => {
+			if (!isHovering) return;
 
-		  const xPercent = (clientX / innerWidth) * 100;
-		  const yPercent = (clientY / innerHeight) * 100;
-	
-		  const newGradient = `radial-gradient(circle at ${xPercent}% ${yPercent}%,#3fb59d88 0%, #6145db21 32%, #03051600 50%)`;
-		  setGradient(newGradient);
+			const { clientX, clientY } = e;
+			const { innerWidth, innerHeight } = window;
+
+			// Calculate the position relative to the hovered div
+			const xPercent = (clientX /innerWidth) * 100;
+			const yPercent = (clientY / innerHeight) * 100;
+
+			const newGradient = `radial-gradient(circle at ${xPercent}% ${yPercent}%, #3fb59d88 0%, #6145db21 32%, #03051600 50%)`;
+			setGradient(newGradient);
 		};
-	
-		window.addEventListener("mousemove", handleMouseMove);
-	return () => {
-		  window.removeEventListener("mousemove", handleMouseMove);
+
+		if (isHovering) {
+			window.addEventListener("mousemove", handleMouseMove);
+		}
+		else {
+			setGradient("radial-gradient(circle at 50% 50%, #3fb59d88 0%, #6145db21 32%, #03051600 50%)"); // Reset the gradient
+			window.removeEventListener("mousemove", handleMouseMove);
+		}
+
+		return () => {
+			window.removeEventListener("mousemove", handleMouseMove);
 		};
-	  }, []);
-	
+	}, [isHovering]);
+
+
 	return (
 		// <Section>
-		<section className="our-services" style={{ background: gradient }}>
+		<section className="our-services" onMouseEnter={() => setIsHovering(true)}
+			onMouseLeave={() => setIsHovering(false)} style={{ background: gradient }}>
 			<p className="h2 text-center">Our <span className="text-primary"> Services</span></p>
 			<div className="services-container" >
 				{services.map((service, index) => (
@@ -61,7 +74,7 @@ const OurServices = () => {
 						<button className="btn-see-more">
 							<div>
 								<span>See <span className="text-primary-dark">More</span></span>&nbsp;
-								<Image src={Icons} alt="svg-file"  height={40} width={40} />
+								<Image src={Icons} alt="svg-file" height={40} width={40} />
 							</div>
 						</button>
 					</div>
