@@ -1,5 +1,6 @@
 "use client";
-// import React from "react";
+
+// Importing all components to be used in this section
 import React, { useState, useEffect } from 'react';
 import featuresData from "./featuresData";
 import FeatureItem from "./FeatureItem";
@@ -17,7 +18,7 @@ import figma from "./Services/Figma.png";
 import wordpress from "./Services/wordpress.png";
 import dh from "./Services/Domain and Hosting.png";
 
-
+// Creating object to initialize all the service names and its corresponding images
 const services = [
 	{ name: 'Website Development', image: web, },
 	{ name: 'UI/UX Design', image: figma, },
@@ -28,7 +29,7 @@ const services = [
 	{ name: 'SEO/Digital Marketing', image: seo, },
 ];
 
-
+// Function for background movement with mouse movement	
 const OurServices = () => {
 	const [gradient, setGradient] = useState("radial-gradient(circle, #3fb59d88 0%, #6145db21 32%, #03051600 50%)");
 	const [isHovering, setIsHovering] = useState(false);
@@ -39,7 +40,6 @@ const OurServices = () => {
 			const { clientX, clientY } = e;
 			const { innerWidth, innerHeight } = window;
 
-			// Calculate the position relative to the hovered div
 			const xPercent = (clientX /innerWidth) * 100;
 			const yPercent = (clientY / innerHeight) * 100;
 
@@ -51,7 +51,7 @@ const OurServices = () => {
 			window.addEventListener("mousemove", handleMouseMove);
 		}
 		else {
-			setGradient("radial-gradient(circle at 50% 50%, #3fb59d88 0%, #6145db21 32%, #03051600 50%)"); // Reset the gradient
+			setGradient("radial-gradient(circle at 50% 50%, #3fb59d88 0%, #6145db21 32%, #03051600 50%)");
 			window.removeEventListener("mousemove", handleMouseMove);
 		}
 
@@ -60,9 +60,8 @@ const OurServices = () => {
 		};
 	}, [isHovering]);
 
-
+	// Return method for mapping the object with the service obejcts
 	return (
-		// <Section>
 		<section className="our-services" onMouseEnter={() => setIsHovering(true)}
 			onMouseLeave={() => setIsHovering(false)} style={{ background: gradient }}>
 			<p className="h2 text-center">Our <span className="text-primary"> Services</span></p>
@@ -81,7 +80,6 @@ const OurServices = () => {
 				))}
 			</div>
 		</section>
-		// </Section>
 	);
 }
 

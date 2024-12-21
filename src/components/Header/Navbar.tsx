@@ -3,6 +3,7 @@ import "../../app/sass/navstyle.scss";
 import Link from "next/link";
 import Section from "../Common/Section";
 
+// Nvigation bar section that has different sections for each section
 const Navbar = () => {
   return (
     <section className="nav">
