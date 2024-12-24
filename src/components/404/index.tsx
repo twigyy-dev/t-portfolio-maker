@@ -45,12 +45,12 @@ const NotFound = () => {
 
   return (
     <div
-      className=".notfound-container overflow-hidden"
+      className="notfound-container"
       onMouseMove={handleMouseMove}
     >
       <div className="relative z-10 text-center">
         <h1
-          className={`text-[10rem] leading-[11rem] font-extrabold text-white opacity-0 transition-opacity duration-300 ${isIlluminated ? 'visible' : ''}`}
+          className={` ${isIlluminated ? 'visible' : ''}`}
           style={{
             clipPath: isIlluminated
               ? `circle(200px at ${gradientPosition.x}px ${gradientPosition.y}px)`

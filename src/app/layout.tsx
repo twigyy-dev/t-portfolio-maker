@@ -5,10 +5,14 @@ const inter = Inter({ subsets: ["latin"] });
 const kanit = Kanit({weight:["100","200","300","400","500","600","700","800","900"], subsets:["latin"]});
 
 const layout = ({ children }: { children: React.ReactNode }) => {
+	const body_main = {
+		margin: 0,
+	}
 	return (
 		<html lang='en' suppressHydrationWarning={true}>
 			<body
 				className={`${kanit.className} flex min-h-screen flex-col bg-[#030516]`}
+				style={body_main}
 			>
 				{children}
 			</body>
