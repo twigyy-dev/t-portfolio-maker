@@ -34,8 +34,8 @@ const FeaturesWithImage = () => {
                     src="/images/clients/Group 4.svg" // Replace with your arrow image path
                     alt="Arrow"
                     className="arrow"
-                    height={40}
-                    width={40}
+                    height={50}
+                    width={50}
                   />
                 </div>
                 {/* Wave Effect */}

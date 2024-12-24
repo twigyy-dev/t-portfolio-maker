@@ -30,7 +30,7 @@ $color-secondary : #030516;
     .nav-h1:hover {
       color: $color-secondary;
       background-color: $color-primary;
-      transition: 200ms;
+      transition: all 0.2s ease;
     }
   
     // Dropdown-specific styles
@@ -44,7 +44,6 @@ $color-secondary : #030516;
       .dropdown-menu {
         position: absolute;
         top: 100%;
-        left: 0;
         background-color: $color-secondary; // Matches your theme
         padding: 10px 0;
         border-radius: 10px;
@@ -59,14 +58,16 @@ $color-secondary : #030516;
             color: white;
             font-size: 18px;
             text-decoration: none;
+            width: 500px;
             padding: 5px 10px;
-            display: block;
+            display: inline-block;
             border-radius: 5px;
             transition: background-color 200ms;
   
             &:hover {
               background-color: $color-primary; // Matches your hover theme
               color: $color-secondary;
+              transition: all 0.2s ease;
             }
           }
         }
