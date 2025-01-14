@@ -7,9 +7,9 @@ import Section from "@/components/Common/Section";
 import Image from "next/image";
 
 const clients = [
-  { name: "Dimensionlabs", img: "/images/clients/dlabs.png" },
+  { name: "Dimensionlabs", img: "/images/clients/Dlabs_initial.png" },
   { name: "Dimensionlabs", img: "/images/clients/twigyy.png" },
-  { name: "Dimensionlabs", img: "/images/clients/dlabs.png" },
+  { name: "Dimensionlabs", img: "/images/clients/Dlabs_initial.png" },
   { name: "Dimensionlabs", img: "/images/clients/kolmin.png" },
 ];
 

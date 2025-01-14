@@ -11,6 +11,10 @@
     &-1 {
       grid-area: 2 / 1 / 4 / 2;
     }
+    &-1 :hover{
+      background-image: url("/public/images/clients/dlabs.png");
+      background-repeat: no-repeat;
+    }
 
     &-2 {
       grid-area: 1 / 2 / 3 / 3;
@@ -86,6 +90,7 @@
   z-index: 1;
   /* Wave effect is below the arrow */
 }
+
 
 .group:hover .arrow-container {
   transform: translate(-50px, -50px);
