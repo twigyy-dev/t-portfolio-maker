@@ -11,10 +11,6 @@
     &-1 {
       grid-area: 2 / 1 / 4 / 2;
     }
-    &-1 :hover{
-      background-image: url("/public/images/clients/dlabs.png");
-      background-repeat: no-repeat;
-    }
 
     &-2 {
       grid-area: 1 / 2 / 3 / 3;
@@ -37,26 +33,12 @@
   }
 }
 
-//   .clients .client-1 {
-//     grid-area: 2 / 1 / 4 / 2;
-//   }
-//   .clients .client-2 {
-//     grid-area: 1 / 2 / 3 / 3;
-//   }
-//   .clients .client-3 {
-//     grid-area: 3 / 2 / 5 / 3;
-//   }
-//   .clients .client-4 {
-//     grid-area: 2 / 3 / 4 / 4;
-//   }
-
 .client {
   position: relative;
   overflow: hidden;
   background: rgb(250, 247, 247);
   border-radius: 30px;
   border: #030516;
-  /* Match the site background */
 }
 
 .arrow-container {
@@ -67,7 +49,6 @@
   height: 80px;
   transition: transform 0.6s ease-out;
   z-index: 2;
-  /* Arrow appears above the wave */
 }
 
 .arrow {
@@ -83,21 +64,17 @@
   width: 100px;
   height: 100px;
   background: #030516;
-  /* Match the site background */
   border-radius: 30%;
   clip-path: path("M0,20 Q0,0 20,0 L130,0 Q150,0 150,20 L150,130 Q150,150 130,150 L20,150 Q0,150 0,130 Z");
   transition: transform 0.6s ease-out;
   z-index: 1;
-  /* Wave effect is below the arrow */
 }
 
 
 .group:hover .arrow-container {
   transform: translate(-50px, -50px);
-  /* Arrow slides into place */
 }
 
 .group:hover .wave {
   transform: translate(-75px, -75px);
-  /* Wave grows into view */
 }

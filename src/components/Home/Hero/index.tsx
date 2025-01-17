@@ -6,12 +6,14 @@ import SectionHeader from "@/components/Common/SectionHeader";
 import "../../../app/sass/herosection.scss";
 import Section from "@/components/Common/Section";
 //import mainbackgroundimage from "/images/hero/mainbackgroundimage.png"
+import logo from "../../../../public/images/Interlace_logo/interlace_main.png"
 
 const Hero = () => {
   return (
 
           <section>
             <div className=" main_image ">
+            <a href="#"><Image className="logo" src={logo} alt="Logo" height={200} width={200}/></a>
               <div className="main_text text-center">
                 <h1 className="text-[108px] text-[#B7B7B7] font-extrabold ">
                   You{" "}

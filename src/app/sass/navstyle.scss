@@ -30,7 +30,7 @@ $color-secondary : #030516;
     .nav-h1:hover {
       color: $color-secondary;
       background-color: $color-primary;
-      transition: all 0.2s ease;
+      transition: all 0.2s ease-in;
     }
   
     // Dropdown-specific styles
@@ -44,11 +44,11 @@ $color-secondary : #030516;
       .dropdown-menu {
         position: absolute;
         top: 100%;
-        background-color: $color-secondary; // Matches your theme
+        background-color: $color-secondary;
         padding: 10px 0;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: none; // Hidden by default
+        display: none;
         z-index: 999;
   
         li {
@@ -65,9 +65,9 @@ $color-secondary : #030516;
             transition: background-color 200ms;
   
             &:hover {
-              background-color: $color-primary; // Matches your hover theme
+              background-color: $color-primary;
               color: $color-secondary;
-              transition: all 0.2s ease;
+              transition: all 0.3s ease-in-out;
             }
           }
         }
@@ -75,7 +75,7 @@ $color-secondary : #030516;
   
       &:hover {
         .dropdown-menu {
-          display: block; // Show on hover
+          display: block;
         }
       }
     }

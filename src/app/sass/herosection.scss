@@ -8,6 +8,10 @@ $button-primary : #09D1D5;
     // height: 100vh;
     background-blend-mode: multiply;
 }
+.logo{
+    padding-top: 10px;
+    padding-left: 10px;
+}
 
 .main_text {
     display: flex;
@@ -15,7 +19,7 @@ $button-primary : #09D1D5;
     justify-content: center;
     align-items: center;
     padding: 25px;
-    padding-top: 250px;
+    padding-top: 230px;
     // gap: 100px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
