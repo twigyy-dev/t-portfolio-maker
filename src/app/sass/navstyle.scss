@@ -4,7 +4,7 @@ $color-secondary : #030516;
 .nav {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 32px;
     position: absolute;
     top: 0;
     transform: translate(-50%);
@@ -29,7 +29,7 @@ $color-secondary : #030516;
   
     .nav-h1:hover {
       color: $color-secondary;
-      background-color: $color-primary;
+      background-color: #10D8DB;
       transition: all 0.2s ease-in;
     }
   
@@ -44,7 +44,7 @@ $color-secondary : #030516;
       .dropdown-menu {
         position: absolute;
         top: 100%;
-        background-color: $color-secondary;
+        background-color: $color-primary;
         padding: 10px 0;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -55,18 +55,20 @@ $color-secondary : #030516;
           padding: 5px 15px;
   
           .dropdown-item {
-            color: white;
+            color: #252525;
             font-size: 18px;
             text-decoration: none;
-            width: 500px;
+            width: 250px;
             padding: 5px 10px;
             display: inline-block;
             border-radius: 5px;
-            transition: background-color 200ms;
+            transition: background-color 0.3s;
   
             &:hover {
-              background-color: $color-primary;
-              color: $color-secondary;
+              border-radius: 10%;
+              cursor: pointer;
+              background-color: $color-secondary;
+              color: white;
               transition: all 0.3s ease-in-out;
             }
           }
