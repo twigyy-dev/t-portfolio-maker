@@ -25,11 +25,6 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/digital-marketing" className="dropdown-item">
-               SEO/Digital Marketing
-              </Link>
-            </li>
-            <li>
               <Link href="/ui-ux" className="dropdown-item">
                 UI/UX Development
               </Link>
@@ -40,13 +35,18 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link href="/ios-development" className="dropdown-item">
+                iOS Development
+              </Link>
+            </li>
+            <li>
               <Link href="/domain-hosting" className="dropdown-item">
                 Domain and Hosting
               </Link>
             </li>
             <li>
-              <Link href="/ios-development" className="dropdown-item">
-                iOS Development
+              <Link href="/digital-marketing" className="dropdown-item">
+                SEO/Digital Marketing
               </Link>
             </li>
           </ul>

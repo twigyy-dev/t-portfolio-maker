@@ -9,7 +9,8 @@ $color-secondary : #030516;
   top: 0;
   transform: translate(-50%);
   left: 70%;
-  z-index: 1000;
+
+  
 
   &-child {
     display: flex;
@@ -17,6 +18,7 @@ $color-secondary : #030516;
     gap: 30px;
     width: max-content;
     justify-content: center;
+    
   }
 
   &-h1 {
@@ -25,11 +27,12 @@ $color-secondary : #030516;
     padding: 4px;
     margin: 10px 0;
     border-radius: 15px;
+    
   }
 
   .nav-h1:hover {
     color: $color-secondary;
-    background-color: #10D8DB;
+    background-color: $color-primary;
     transition: all 0.2s ease-in;
   }
 
@@ -44,17 +47,21 @@ $color-secondary : #030516;
     }
 
     .dropdown-menu {
+      font-size: 25px;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px; 
-      position: absolute;
-      top: 33px;
-      left: -110px;
+      grid-template-columns: repeat(3, 1fr);
+      // grid-template-rows: repeat(3, 1fr);
+      gap: 30px; 
+      position: fixed;
+      top: 0px ;
+      left: -132%;
+      width: 260%;
+      height: auto;
       background-color: $color-primary;
-      padding: 10px;
-      border-radius: 30px;
-      z-index: 1000;
-      min-width: 639px;
+      padding-top: 150px;
+      padding-bottom: 30px;
+      border-radius:0px 0px 30px 30px;
+      z-index: -1;
       opacity: 0;
       visibility: hidden;
       transform: translateY(10px);

@@ -8,9 +8,11 @@ $button-primary : #09D1D5;
     // height: 100vh;
     background-blend-mode: multiply;
 }
+
 .logo{
-    padding-top: 15px;
-    padding-left: 25px;
+    position: relative;
+    padding: 15px 0px 0px 20px;
+    z-index: 999;
 }
 
 .main_text {

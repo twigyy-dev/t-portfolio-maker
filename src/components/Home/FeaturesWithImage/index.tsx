@@ -8,9 +8,9 @@ import Image from "next/image";
 
 const clients = [
   { name: "Dimensionlabs", img: "/images/clients/Dlabs_initial.png" },
-  { name: "Dimensionlabs", img: "/images/clients/twigyy.png" },
+  { name: "Twigyy", img: "/images/clients/twigyy.png" },
   { name: "Dimensionlabs", img: "/images/clients/Dlabs_initial.png" },
-  { name: "Dimensionlabs", img: "/images/clients/kolmin.png" },
+  { name: "Kolmin", img: "/images/clients/kolmin.png" },
 ];
 
 const FeaturesWithImage = () => {
