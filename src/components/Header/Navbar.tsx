@@ -1,10 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import "../../app/sass/navstyle.scss";
+import Image from "next/image";
+import logo from "../../../public/images/Interlace_logo/interlace_main.svg"
+
 
 const Navbar = () => {
   return (
     <section className="nav">
+      <a href="#"><Image className="logo" src={logo} alt="Logo" height={230} width={230} /></a>
       <ul className="nav-child border-rounded-white">
         <li>
           <Link href="/" className="nav-h1">

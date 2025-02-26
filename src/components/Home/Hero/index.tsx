@@ -13,7 +13,6 @@ const Hero = () => {
 
           <section>
             <div className=" main_image ">
-            <a href="#"><Image className="logo" src={logo} alt="Logo" height={230} width={230} /></a>
               <div className="main_text text-center">
                 <h1 className="text-[108px] text-[#B7B7B7] font-extrabold ">
                   You{" "}
