@@ -86,12 +86,12 @@ export default function FaqItem({
 
 	return (
 		<>
-			<div className='rounded-lg bg-white shadow-1 dark:bg-gray-dark'>
+			<div className='rounded-lg bg-white shadow-1 dark:bg-[#232533] border-[rgba(255, 255, 255, 0.2)] '>
 				<button
 					onClick={() => {
 						handleFaqToggle(id);
 					}}
-					className={`text-medium flex w-full items-center justify-between px-6 py-4 text-left text-lg text-dark dark:text-white md:text-xl`}
+					className={`h4 font-medium flex w-full items-center justify-between px-6 py-4 text-left text-lg text-dark dark:text-white md:text-xl`}
 				>
 					{question}
 
@@ -99,8 +99,8 @@ export default function FaqItem({
 						className={`duration-300 ${activeFaq === id ? "rotate-180" : ""}`}
 					>
 						<svg
-							width='24'
-							height='25'
+							width='30'
+							height='30'
 							viewBox='0 0 24 25'
 							fill='none'
 							xmlns='http://www.w3.org/2000/svg'

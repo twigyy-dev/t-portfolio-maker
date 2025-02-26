@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import faqData from "./faqData";
 import FaqItem from "./FaqItem";
 import SectionHeader from "@/components/Common/SectionHeader";
+import Section from "../Common/Section";
 
 const FAQ = () => {
 	const [activeFaq, setActiveFaq] = useState<number | string>(1);
@@ -12,16 +13,13 @@ const FAQ = () => {
 	};
 
 	return (
-		<section className='overflow-hidden bg-gray-1 py-17.5 dark:bg-black lg:py-22.5 xl:py-27.5'>
+		<Section>
 			{/* <!-- section title --> */}
 
-			<SectionHeader
-				title={"Frequently Ask Questionss"}
-				description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum dictum euismod malesuada lacus, non consequat quam.'
-			/>
+			<h3 className="text-center h2 mb-4">Frequently Asked <span className="text-primary">Questions</span></h3>
 
-			<div className='mx-auto w-full max-w-[662px] px-4 sm:px-8 xl:px-0'>
-				<div className='flex flex-col gap-4 '>
+			<div className='mx-auto w-full px-4 sm:px-8 xl:px-0'>
+				<div className='flex flex-col gap-8 '>
 					{/* <!-- Accordion Item --> */}
 					{faqData?.map((faq, key) => (
 						<FaqItem
@@ -33,7 +31,7 @@ const FAQ = () => {
 					))}
 				</div>
 			</div>
-		</section>
+		</Section>
 	);
 };
 

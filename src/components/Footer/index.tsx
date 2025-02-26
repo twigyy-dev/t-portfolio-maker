@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import logo from "../../../public/images/Interlace_logo/interlace_main.svg"
+
 
 const Footer = () => {
 	return (
@@ -10,14 +12,14 @@ const Footer = () => {
 					<div className='w-full max-w-[275px]'>
 						<a href='index.html'>
 							<Image
-								src='/images/logo/logo-light.svg'
+								src={logo}
 								alt='Logo'
-								width={214}
+								width={150}
 								height={40}
 							/>
 						</a>
 						<p className='mt-5 text-gray-5'>
-							© Your SaaS - Demo SaaS website created using SaaSBold
+							©2025 Your one stop solution for all the digital services
 						</p>
 
 						<ul className='mt-11 flex items-center gap-2'>
