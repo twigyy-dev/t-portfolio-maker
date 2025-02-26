@@ -24,7 +24,8 @@ const CommonChallenges = (props: ChallengesProps) => {
         <Section>
             <h3 className='service-challenge-heading'>{props.heading}</h3>
             {props.challenges.map((challenge,key)=>(
-                <TwoColumnWithText 
+                <TwoColumnWithText
+                key={key} 
                 title={challenge.title} 
                 text={challenge.text}
                 image={challenge.image}

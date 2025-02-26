@@ -22,17 +22,17 @@
 h1 {
   position: relative;
   color: white;
-  font-size: 50rem;
-  line-height: 11rem;
+  font-size: 30rem;
+  line-height: 1rem;
   font-weight: 800;
-  opacity: 0; /* Initially hidden text */
-  transition: opacity 0.3s ease-out, clip-path 0.3s ease-out;
-  -webkit-transition: opacity 0.3s ease-out, clip-path 0.3s ease-out;
+  opacity: 1; /* Initially hidden text */
+  // transition: opacity 0.3s ease-out, clip-path 0.3s ease-out;
+  // -webkit-transition: opacity 0.3s ease-out, clip-path 0.3s ease-out;
   z-index: 10;
-  clip-path: circle(0px at 50% 50%); /* Initially hide text */
+  // clip-path: circle(0px at 50% 50%); /* Initially hide text */
 }
 
 h1.visible {
   opacity: 1; /* Show text when inside the torch */
-  clip-path: circle(200px at 50% 50%); /* Expand circle as it gets illuminated */
+  // clip-path: circle(200px at 50% 50%); /* Expand circle as it gets illuminated */
 }

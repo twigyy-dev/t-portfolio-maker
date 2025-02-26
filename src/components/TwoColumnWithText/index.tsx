@@ -12,7 +12,7 @@ type ColumnProps = {
 
 const TwoColumnWithText = (props:ColumnProps) => {
 
-    console.log(props.orientation)
+    // console.log(props.orientation)
 
     return (
             <div className={`${props.orientation == "right" ? "flex flex-row-reverse text-right": "flex"} `}>

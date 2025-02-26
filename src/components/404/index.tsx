@@ -46,23 +46,23 @@ const NotFound = () => {
   return (
     <div
       className="notfound-container"
-      onMouseMove={handleMouseMove}
+      // onMouseMove={handleMouseMove}
     >
-      <div className="relative z-10 text-center">
+      <div className="relative z-10 text-center mt-[15%]">
         <h1
-          className={` ${isIlluminated ? 'visible' : ''}`}
-          style={{
-            clipPath: isIlluminated
-              ? `circle(200px at ${gradientPosition.x}px ${gradientPosition.y}px)`
-              : 'circle(0px at 50% 50%)',
-            WebkitClipPath: isIlluminated
-              ? `circle(200px at ${gradientPosition.x}px ${gradientPosition.y}px)`
-              : 'circle(0px at 50% 50%)',
-          }}
+          className={` ${isIlluminated ? 'visible' : 'visible'}`}
+          // style={{
+          //   clipPath: isIlluminated
+          //     ? `circle(200px at ${gradientPosition.x}px ${gradientPosition.y}px)`
+          //     : 'circle(0px at 50% 50%)',
+          //   WebkitClipPath: isIlluminated
+          //     ? `circle(200px at ${gradientPosition.x}px ${gradientPosition.y}px)`
+          //     : 'circle(0px at 50% 50%)',
+          // }}
         >
           404
         </h1>
-        <p className="text-lg text-gray-600 mt-4">
+        <p className="text-lg text-gray-600 mt-[25%]">
           The page you’re looking for doesn’t exist.
         </p>
         <Link
@@ -72,14 +72,14 @@ const NotFound = () => {
           Go Back Home
         </Link>
       </div>
-      <div
+      {/* <div
         className="gradient"
         ref={gradientRef}
         style={{
           left: `${gradientPosition.x - 100}px`,
           top: `${gradientPosition.y - 100}px`,
         }}
-      />
+      /> */}
     </div>
   );
 };

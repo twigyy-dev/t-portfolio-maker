@@ -8,7 +8,7 @@ import logo from "../../../public/images/Interlace_logo/interlace_main.svg"
 const Navbar = () => {
   return (
     <section className="nav">
-      <a href="#"><Image className="logo" src={logo} alt="Logo" height={230} width={230} /></a>
+      <Link href="/"><Image className="logo" src={logo} alt="Logo" height={230} width={230} /></Link>
       <ul className="nav-child border-rounded-white">
         <li>
           <Link href="/" className="nav-h1">
